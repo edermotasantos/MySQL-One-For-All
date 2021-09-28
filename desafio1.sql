@@ -50,7 +50,7 @@ album VARCHAR(255),
 artista_id INT NOT NULL,
 FOREIGN KEY (artista_id)
 REFERENCES artistas (artista_id)
-)  ENGINE=INNODB
+)  ENGINE=INNODB;
 
 INSERT INTO albuns(album, artista_id)
 VALUES
@@ -113,7 +113,7 @@ VALUES
 CREATE TABLE cancoes_usuarios (
 CONSTRAINT PRIMARY KEY (cancao_id , usuario_id),
 usuario_id INT NOT NULL,
-musica_id INT NOT NULL,
+cancao_id INT NOT NULL,
 FOREIGN KEY (usuario_id)
 REFERENCES usuarios (usuario_id),
 FOREIGN KEY (cancao_id)
