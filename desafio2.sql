@@ -9,4 +9,3 @@ SELECT COUNT(*)
 FROM SpotifyClone.albuns
 ) AS albuns
 FROM SpotifyClone.cancoes;
- 
