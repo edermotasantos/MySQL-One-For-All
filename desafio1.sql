@@ -5,9 +5,9 @@ CREATE DATABASE SpotifyClone;
 USE SpotifyClone;
 
 CREATE TABLE planos (
-    plano_id INT PRIMARY KEY AUTO_INCREMENT,
-    plano VARCHAR(100) NOT NULL,
-    valor_plano DECIMAL(3 , 2 ) NOT NULL
+plano_id INT PRIMARY KEY AUTO_INCREMENT,
+plano VARCHAR(100) NOT NULL,
+valor_plano DECIMAL(3 , 2 ) NOT NULL
 )  ENGINE=INNODB;
 
 INSERT INTO planos(plano, valor_plano)
@@ -17,12 +17,12 @@ VALUES
 ('universitário', 5,99);
 
 CREATE TABLE usuarios (
-    usuario_id INT PRIMARY KEY AUTO_INCREMENT,
-    usuario VARCHAR(100) NOT NULL,
-    idade INT NOT NULL,
-    plano_id INT NOT NULL,
-    FOREIGN KEY (plano_id)
-        REFERENCES planos (plano_id)
+usuario_id INT PRIMARY KEY AUTO_INCREMENT,
+usuario VARCHAR(100) NOT NULL,
+idade INT NOT NULL,
+plano_id INT NOT NULL,
+FOREIGN KEY (plano_id)
+REFERENCES planos (plano_id)
 )  ENGINE=INNODB;
 
 INSERT INTO usuarios(usuario, idade, plano_id)
@@ -33,8 +33,8 @@ VALUES
 ('Roger', 45, 1);
 
 CREATE TABLE artistas (
-    artista_id INT PRIMARY KEY AUTO_INCREMENT,
-    artista VARCHAR(100) NOT NULL
+artista_id INT PRIMARY KEY AUTO_INCREMENT,
+artista VARCHAR(100) NOT NULL
 )  ENGINE=INNODB;
 
 INSERT INTO artistas(artista)
@@ -45,11 +45,11 @@ VALUES
 ('Freedie Shannon');
 
 CREATE TABLE albuns (
-    album_id INT PRIMARY KEY AUTO_INCREMENT,
-    album VARCHAR(255),
-    artista_id INT NOT NULL,
-    FOREIGN KEY (artista_id)
-        REFERENCES artistas (artista_id)
+album_id INT PRIMARY KEY AUTO_INCREMENT,
+album VARCHAR(255),
+artista_id INT NOT NULL,
+FOREIGN KEY (artista_id)
+REFERENCES artistas (artista_id)
 )  ENGINE=INNODB
 
 INSERT INTO albuns(album, artista_id)
@@ -61,11 +61,11 @@ VALUES
 ('Temporary Culture', 4);
 
 CREATE TABLE cancoes (
-    cancao_id INT PRIMARY KEY AUTO_INCREMENT,
-    cancao VARCHAR(255) NOT NULL,
-    album_id INT NOT NULL,
-    FOREIGN KEY (album_id)
-        REFERENCES albuns (album_id)
+cancao_id INT PRIMARY KEY AUTO_INCREMENT,
+cancao VARCHAR(255) NOT NULL,
+album_id INT NOT NULL,
+FOREIGN KEY (album_id)
+REFERENCES albuns (album_id)
 )  ENGINE=INNODB;
 
 INSERT INTO cancoes (cancao, album_id)
@@ -90,13 +90,13 @@ VALUES
 ('Without My Streets', 5);
 
 CREATE TABLE usuarios_artistas (
-    CONSTRAINT PRIMARY KEY (usuario_id , artista_id),
-    usuario_id INT NOT NULL,
-    artista_id INT NOT NULL,
-    FOREIGN KEY (usuario_id)
-        REFERENCES usuarios (usuario_id),
-    FOREIGN KEY (artista_id)
-        REFERENCES artistas (artista_id)
+CONSTRAINT PRIMARY KEY (usuario_id , artista_id),
+usuario_id INT NOT NULL,
+artista_id INT NOT NULL,
+FOREIGN KEY (usuario_id)
+REFERENCES usuarios (usuario_id),
+FOREIGN KEY (artista_id)
+REFERENCES artistas (artista_id)
 )  ENGINE=INNODB;
   
 INSERT INTO usuarios_artistas (usuario_id, artista_id)
@@ -111,13 +111,13 @@ VALUES
 (4,	4);
 
 CREATE TABLE cancoes_usuarios (
-    CONSTRAINT PRIMARY KEY (cancao_id , usuario_id),
-    usuario_id INT NOT NULL,
-    musica_id INT NOT NULL,
-    FOREIGN KEY (usuario_id)
-        REFERENCES usuarios (usuario_id),
-    FOREIGN KEY (cancao_id)
-        REFERENCES cancoes (cancao_id)
+CONSTRAINT PRIMARY KEY (cancao_id , usuario_id),
+usuario_id INT NOT NULL,
+musica_id INT NOT NULL,
+FOREIGN KEY (usuario_id)
+REFERENCES usuarios (usuario_id),
+FOREIGN KEY (cancao_id)
+REFERENCES cancoes (cancao_id)
 )  ENGINE=INNODB;
 
 INSERT INTO cancoes_usuarios (cancao_id, usuario_id)
