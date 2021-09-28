@@ -13,8 +13,8 @@ valor_plano DECIMAL(3 , 2 ) NOT NULL
 INSERT INTO planos(plano, valor_plano)
 VALUES
 ('gratuito', 0),
-('familiar', 7,99),
-('universitário', 5,99);
+('familiar', 7.99),
+('universitário', 5.99);
 
 CREATE TABLE usuarios (
 usuario_id INT PRIMARY KEY AUTO_INCREMENT,
