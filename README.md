@@ -1,4 +1,4 @@
-# 🍲 MySQL One For All
+# 🗂 MySQL One For All
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
@@ -18,13 +18,13 @@ O processo de normalização de estruturas é fundamental para reduzir erros, di
 
 <!-- <img src="exemplo-image.png" alt="exemplo imagem"> -->
 
-## 🍤 Pré-requisitos
+## 🗂 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * você deve possuir o Visual Studio Code ou outro editor de código instalado
 * você deve possuir o MySQL Workbench instalado em sua máquina
  
-## 🍕 Instalando MySQL One For All
+## 🗂 Instalando MySQL One For All
 
 Para instalar o MySQL One For All, siga estas etapas:
 
@@ -37,14 +37,14 @@ Linux:
 * Dentro da pasta instale as dependências:
 `npm install`
 
-## 🌮 Usando MySQL One For All
+## 🗂 Usando MySQL One For All
 
 Para usar MySQL One For All, siga estas etapas:
-* Para executar os testes é preciso digitar no terminal: MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test
+* Para executar os testes é preciso digitar no terminal: `MYSQL_USER=<SEU_NOME_DE_PESSOA_USUARIA> MYSQL_PASSWORD=<SUA SENHA> HOSTNAME=<NOME_DO_HOST> npm test`
 
 Agora você já pode começar a desenvolver o seu projeto!
 
-## 🥞 Referências:
+## 🗂 Referências:
 <a href="https://github.com/iuricode/readme-template/blob/main/README-repository/iuricode.md">iuricode</a>
 
 <a href="https://github.com/arthur-hc/Project-Cookmaster/edit/main/README.md">arthur-hc</a>
