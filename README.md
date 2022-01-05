@@ -1,15 +1,7 @@
 # 🗂 MySQL One For All
 
-<!-- 
-![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/iuricode/README-template?style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/iuricode/README-template?style=for-the-badge)
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/iuricode/README-template?style=for-the-badge)
-![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/iuricode/README-template?style=for-the-badge)
--->
 <div> 
   <a href="https://www.linkedin.com/in/eder-santos-78114521a/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-  <!--  <a href = "mailto:3derms@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a> -->
   <a href = "mailto:eder.mota@outlook.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a> 
 </div>
 
