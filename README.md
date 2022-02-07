@@ -33,6 +33,8 @@ Linux:
 `git clone git@github.com:edermotasantos/MySQL-One-For-All.git`
 * Entre na página através do comando:
 `cd MySQL-One-For-All`
+* Verifique se está na branch do projeto, caso contrário mude para a branch desse projeto em específico: 
+`git checkout eder-mota-santos-mysql-one-for-all`
 * Dentro da pasta instale as dependências:
 `npm install`
 
