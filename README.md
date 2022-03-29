@@ -5,7 +5,7 @@
   <a href = "mailto:eder.mota@outlook.com"><img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" target="_blank"></a> 
 </div>
 
-Esse foi o último projeto proposto pela Trybe focado em SQL e tem como objetivo normalizar a estrutura que for passada de uma versão simplificada de um banco de dados do Spotify. Para isso é necessário que cumpra os seguintes requisitos:
+Esse foi o último projeto proposto pela Trybe focado em SQL no módulo de Back End e tem como objetivo normalizar a estrutura que for passada de uma versão simplificada de um banco de dados do Spotify. Para isso é necessário que cumpra os seguintes requisitos:
 - Aplicar a 1ª, 2ª e 3ª formas normais
 - Criar um banco de dados
 - Criar `VIEWS`
